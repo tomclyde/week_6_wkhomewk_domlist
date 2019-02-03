@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <!-- planets - gas, rock,  number of moons, rings -->
+   <header class="p3 v69 flex flex-column justify-end frost bg-black bg-cover bg-center vignette"
+   style="background-image: url(https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg)">
+   <div class="max-width-3 bt py2 mb4">
+     <h1 class="h0 m0 caps">Planet Picker</h1>
+   </div>
+  </header>
+  <head>
+    <meta charset="utf-8">
+    <title>Planets</title>
+    <script src="js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body align=center>
+    <h1>Pick a planet</h1>
+    <form id="new-item-form">
+      <div id="form-wrapper" class="max-width-3 py2 mb4">
+        <div class="form-item">
+            <div id=planet-name>
+              <input type="radio" name="planet_name" value="Mercury" required> Mercury
+              <picture>
+                <img src="images/mercury.jpeg" alt="picture of mercury"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Venus"> Venus
+              <picture>
+                <img src="images/venus.jpeg" alt="picture of venus"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Earth"> Earth
+              <picture>
+                <img src="images/earth.jpeg" alt="picture of earth"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Mars"> Mars
+              <picture>
+                <img src="images/mars.jpeg" alt="picture of mars"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Jupiter"> Jupiter
+              <picture>
+                <img src="images/jupiter.jpeg" alt="picture of jupiter"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Saturn"> Saturn
+              <picture>
+                <img src="images/saturn.jpeg" alt="picture of saturn"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Uranus"> Uranus
+              <picture>
+                <img src="images/uranus.jpeg" alt="picture of uranus"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Neptune"> Neptune
+              <picture>
+                <img src="images/neptune.jpeg" alt="picture of neptune"><br>
+              </picture>
+              <input type="radio" name="planet_name" value="Dwarf Planet Pluto"> Dwarf Planet Pluto
+              <picture>
+                <img src="images/pluto.jpeg" alt="picture of pluto"><br>
+              </picture>
+            </div>
+        </div>
+
+        <h2>Choose your favourite thing about it</h2>
+        <div class="form-item">
+            <div id=best-thing-dropdown>
+              <label for="best_thing" class="primary">Best thing about this Planet</label>
+              <select id="best_thing" required>
+                <option value="" disabled selected></option>
+                <option value="It's name">It's name</option>
+                <option value="How it looks">How it looks</option>
+                <option value="I'd like to visit it one day!">I'd like to visit it one day!</option>
+                <option value="It's just my favourite OK!">It's just my favourite OK!</option>
+              </select>
+            </div>
+        </div>
+
+        <h2>Anything Else</h2>
+        <div class="form-item">
+            <div id=anything-else>
+              <label for="free_input" class="primary">Anything Else you'd like to say about this Planet?</label>
+              <input type="text" id="free_input"/>
+            </div>
+        </div>
+      </div>
+      <br>
+      <input class="btn" type="submit" value="save"/>
+    </form>
+
+
+    <h1>Planet List - With Planet info added</h1>
+    <div id="planet-list">
+
+    <ul id="planet-list-ul" class="nobull">
+    <div id=lidiv class="flex-container">
+
+
+
+    </div>
+    </ul>
+    </div>
+
+
+<form id="delete-form">
+    <!-- <div id="delete-form" class="form-item"> -->
+    <input class="btn" type="submit" value="delete"/>
+  <!-- </div> -->
+</form>
+
+  </body>
+</html>
